@@ -76,7 +76,6 @@ public class ClickEventCount {
 		final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
 		configureEnvironment(params, env);
-
 		boolean inflictBackpressure = params.has(BACKPRESSURE_OPTION);
 
 		String inputTopic = params.get("input-topic", "input");
